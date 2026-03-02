@@ -10,16 +10,16 @@ This repository is a short, deployable pipeline intended to demonstrate reliable
    git clone https://github.com/tanjilh136/Financial-Data-Engineering-Pipeline.git
    cd Financial-Data-Engineering-Pipeline
 
-##Install:
+## Install:
 
 python -m venv .venv
 source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-##Run demo:
+## Run demo:
 
 python -m steeleye_assignment.main
 
-##Inspect output:
+## Inspect output:
 
 output/dltins_output.csv (example output included: output/dltins_output_sample.csv)
