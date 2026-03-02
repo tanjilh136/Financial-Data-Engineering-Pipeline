@@ -1,47 +1,11 @@
-# SteelEye Data Engineer Technical Assessment
+# DLTINS → Financial Instrument ETL 
 
-This repository contains my solution for the SteelEye Data Engineer technical assessment.
-✅ Downloads DLTINS data from ESMA  
-✅ Extracts XML from ZIP  
-✅ Parses instrument data into a DataFrame  
-✅ Enriches it with custom fields (`a_count`, `contains_a`)  
-✅ Exports the result to CSV  
+A compact production-style ETL that downloads ESMA DLTINS ZIP files, extracts XML, parses instrument data, enriches it with derived fields (`a_count`, `contains_a`), and exports a validated CSV.
 
-## Requirements
+This repository is a short, deployable pipeline intended to demonstrate reliable data ingestion, schema validation, simple enrichment, and reproducible outputs — exactly the sort of work expected in a data engineering internship.
 
-- Python 3.x
-- Pandas
-- Requests
-- pytest
-
-## How to run
-
-1. Clone the repo:
-```bash
-git clone https://github.com/tanjilh136/steeleye-data-engineer-assessment.git
-
-2.Install dependencies:
-    pip install -r requirements.txt
-
-3. Run the pipeline:
-    python -m steeleye_assignment.main
-4. Run tests :
-    python -m unittest discover -s tests
-
-The resulting file will be saved at:
-    output/dltins_output.csv
-It contains:
-
--> Instrument ID, Name, Classification
-
--> Issuer
-
--> a_count: Number of 'a' in name
-
--> contains_a: YES/NO
-
-## 📜 Author
-
-- 👤 Tanjil Hasan 
-- 🌍 Porto, Portugal
-- 🧰 GitHub: [github.com/tanjilh136](https://github.com/tanjilh136)
+## One-minute demo (no setup)
+1. Clone:
+   ```bash
+   git clone https://github.com/tanjilh136/Financial-Data-Engineering-Pipeline.git
+   cd Financial-Data-Engineering-Pipeline
